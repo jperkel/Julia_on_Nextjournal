@@ -21,9 +21,9 @@ println("Circumference = ", round(C, digits = 2))
 Greek characters can also represent functions. Here, we'll define two functions f(x) and g(x), and use the Greek sigma $\\Sigma$ (`("\\Sigma")`) to sum those functions over an interval.
 
 ```julia id=6e5396f6-4a21-439c-84c6-c2522e24e8d3
-function ∑(f::Function,from::Integer,to::Integer)
+function ∑(f::Function, from::Integer, to::Integer)
   # note that Julia allows you to specify the 'type' of parameters passed to 
-  # a function, which makes for more optimized (and error-checked) code. 
+  # a function, which makes for error-checked and self-documenting code. 
   # Here, the parameter 'f' is defined as a function; 'from' and 'to'
   # are defined as integers.
     sum = 0
